@@ -1,24 +1,165 @@
 <!DOCTYPE html>
-
 <html>
-		<head>
-			<title>
+<head>
+    <title>Sanrio Blindbox Collector</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
 
-			</title>
+<body>
 
-			<link rel="stylesheet" href="style.css"/>
+    <section>
 
-		</head>	
+        <h1>
+        	Miniso x Sanrio
+    	</h1>
 
-			<h1>
-				Miniso x Sanrio Blind Box Tracker
-			</h1>
+    </section>
 
-			<h2>
-				A Place Where Sanrio Figure Collectors Can Keep Track Of Their Collection
-			</h2>
+    <section> <!-- Added a missing opening <section> tag here -->
 
-		<body>
-			<!-- https://www.quora.com/How-do-I-move-text-up-in-CSS#:~:text=%C2%B7%2010mo-,To%20move%20text%20up%20in%20CSS%2C%20you%20can%20use%20the,top%20of%20its%20parent%20element. -->
-			<img src="sanrio images/s-l1200.jpg" width="400px" height="auto" class="wdn-strech rounded-corners">
-		</body>
+        <div class="container reveal">
+
+            <h2>Sanrio Blindbox Collector</h2>
+
+            <div class="cards">
+
+                <div class="text-cards">
+
+                    <h3>A Place Where Sanrio Figure Collectors Can Keep Track Of Their Collection
+                    </h3>
+
+                    <p>
+                    "Sanrio Blindbox Collector" is a web resource where every Sanrio fan can keep track of each and every one of their figures with just one click of a button
+                	</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+    	<script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal() {
+        var reveals = document.querySelectorAll('.reveal');
+
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var revealTop = reveals[i].getBoundingClientRect().top;
+            var revealPoint = 150;
+
+            if (revealTop < windowHeight - revealPoint) {
+                reveals[i].classList.add('active');
+            } else {
+                reveals[i].classList.remove('active');
+            }
+        }
+    }
+</script>
+
+
+    </section>
+    	
+    </div>
+
+    <section class="items">
+
+        <div class="item">
+        	<img src="./blue sea images/bs.jpg" class="rounded-corners"/>
+        		<button>
+        			Blue Sea Holiday Series
+        		</button>
+        </div>
+
+        <div class="item">
+        	<img src="./cinna 20 images/cinna 20.jpg" class="rounded-corners"/>
+        		<button>
+        			Cinnamoroll 20th Anniversary Birthday Series
+        		</button>
+        </div>
+
+        <div class="item">
+        	<img src="./fluffy bunny images/fb.jpg" class="rounded-corners"/>
+        		<button>
+        			Fluffy Rabbit Series
+        		</button>
+       	</div>
+
+       	<div class="item">
+        	<img src="./hugging buddies images/hb.jpg" class="rounded-corners"/>
+        		<button>
+        			Hugging Buddies Series
+        		</button>
+        </div>
+
+        <div class=item>
+        	<img src="./kuromi and melo images/km.jpg" class="rounded-corners"/>
+        		<button>
+        			Kuromi and Melody and Rose Series
+        		</button>
+        </div>
+
+        <div class="item">
+        	<img src="./kuromis birthday images/kb.jpg" class="rounded-corners"/>
+        		<button>
+        			Kuromi's Birthday Series
+        		</button>
+        </div>
+
+        <div class="item">
+        	<img src="./melo and kuromi sweet images/km.jpg" class="rounded-corners"/>
+        		<button>
+        			My Melody and Kuromi Sweetheart Pajamas
+        		</button>
+        </div>
+
+        <div class="item">
+        	<img src="./melo secret images/ms.jpg" class="rounded-corners"/>
+        		<button>
+        			My Melody Secret Forest Tea Party Series
+        		</button>
+        </div>
+
+        <div class="item">
+        	<img src="./peekaboo images/pb.jpg" class="rounded-corners"/>
+        		<button>
+        			Peekaboo Series
+        		</button>
+        </div>
+
+        <div class="item">
+        	<img src="pocha flower images/pf.jpg" class="rounded-corners"/>
+        		<button>
+        			Pocchacco Flower & Childhood Series
+        		</button>
+        </div>
+
+        <div class="item">
+        	<img src="./pocha school images/ps.jpg" class="rounded-corners"/>
+        		<button>
+        			Pocchacco School Day Series
+        		</button>
+        </div>
+
+       	<div class="item">
+   			<img src="star angel images/sa.png" class="rounded-corners"/>
+    		<button>
+        		Star Angel Series
+    		</button>
+		</div>
+
+    </section>
+    	
+    	</div>
+
+    </section>
+
+</body>
+
+</html>
+

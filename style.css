@@ -1,35 +1,107 @@
-
-@font-face{
-	font-family:Baloo;
-	src:url(fonts/Baloo-Regular.woff);
+@font-face {
+    font-family: Baloo;
+    src: url(fonts/Baloo-Regular.woff);
 }
 
-/*https://www.freecodecamp.org/news/css-comments-how-to-comment-out-css/#:~:text=A%20forward%20slash%20(%20%2F%20)%20and,and%20forward%20slash%20(%20*%2F%20).*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Baloo;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
 
 body {
-	background: rgba(245, 244, 236, 1.0);
+    background: rgba(245, 244, 236, 1.0);
+    font-family: Baloo;
 }
 
-h1{
-	font-family: Baloo;
-	font-size: 35pt;
-	color: rgb(253, 221, 221, 1.0);
-	-webkit-text-stroke: rgba(191, 100, 100, 1.0) 0.05pt;
-	text-align: center;
-	/*https://www.w3schools.com/css/css_align.asp#:~:text=To%20just%20center%20the%20text,This%20text%20is%20centered.*/
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h2{
-	font-family: Baloo;
-	font-size: 20px;
-	text-align: center;
-	color: rgba(191, 100, 100, 1.0);
-	margin-top: -40px;
-	/*https://www.quora.com/How-do-I-move-text-up-in-CSS#:~:text=%C2%B7%2010mo-,To%20move%20text%20up%20in%20CSS%2C%20you%20can%20use%20the,top%20of%20its%20parent%20element.*/
+section:nth-child(1) {
+    color: rgba(253, 221, 221, 1.0);
 }
 
-img.rounded-corners{
-	border-radius: 15px;
-	/*https://ianrmedia.unl.edu/resources/rounded-corners-images#:~:text=The%20border%2Dradius%20CSS%20property%20is%20what%20adds%20the%20rounded%20corners.&text=You%20can%20experiment%20with%20different,it%20the%20way%20you%20like.&text=border%2Dradius%3A%2075px%3B,%2Dradius%3A%2050%25%3B%20.*/	
-	margin: 15px;
+section .container {
+    margin: 100px;
+}
+
+section h1 {
+    font-size: 80px;
+    -webkit-text-stroke: 0.5pt rgba(191, 100, 100, 1.0);
+}
+
+section h2 {
+    font-size: 60px;
+    color: rgba(253, 221, 221, 1.0);
+    -webkit-text-stroke: 0.5pt rgba(191, 100, 100, 1.0);
+    text-align: center;
+}
+
+section h3 {
+    font-size: 35px;
+    color: rgba(191, 100, 100, 1.0);
+    text-align: center;
+}
+
+section p {
+    font-size: 25px;
+    color: rgba(197, 131, 131, 1.0);
+    text-align: center;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 2s ease; /* Fixed the typo here */
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+
+.item img{
+    width: 480px;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border-radius: 13px;
+}
+
+.item img:hover{
+    transform: scale(1.04);
+}
+
+.item button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: rgba(191, 100, 100, 1.0);
+    color: rgba(253, 221, 221, 1.0);
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    align-content: center;
+    border-radius: 10px;
+
 }
