@@ -1,8 +1,15 @@
 <!DOCTYPE html>
+<!--Ali helped me to reorganize files, relink images and taught me how to link files within files-->
 <html>
 <head>
     <title>Sanrio Blindbox Collector</title>
-    <link rel="stylesheet" href="style.css"/>
+    
+<!-- CSS -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<!-- JavaScript -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<link rel="stylesheet" href="css/style.css"/>
 </head>
 
 <body>
@@ -42,234 +49,111 @@
 
     <section>
 
-    	<script type="text/javascript">
-    window.addEventListener('scroll', reveal);
-
-    function reveal() {
-        var reveals = document.querySelectorAll('.reveal');
-
-        for (var i = 0; i < reveals.length; i++) {
-            var windowHeight = window.innerHeight;
-            var revealTop = reveals[i].getBoundingClientRect().top;
-            var revealPoint = 150;
-
-            if (revealTop < windowHeight - revealPoint) {
-                reveals[i].classList.add('active');
-            } else {
-                reveals[i].classList.remove('active');
-            }
-        }
-    }
-		</script>
 <!--looked up how to fade on scroll text on Youtube-->
 
     </section>
     	
     </div>
 
-<!--image slider start-->
-    <div class="slider">
-    	<div class="slides">
-<!--radio buttons start-->
+    	<div class="main-carousel">
 
-    		<input type="radio" name="radio-btn" id="radio1">
-    		<input type="radio" name="radio-btn" id="radio2">
-    		<input type="radio" name="radio-btn" id="radio3">
-    		<input type="radio" name="radio-btn" id="radio4">
-    		<input type="radio" name="radio-btn" id="radio5">
-    		<input type="radio" name="radio-btn" id="radio6">
-    		<input type="radio" name="radio-btn" id="radio7">
-    		<input type="radio" name="radio-btn" id="radio8">
-    		<input type="radio" name="radio-btn" id="radio9">
-    		<input type="radio" name="radio-btn" id="radio10">
-    		<input type="radio" name="radio-btn" id="radio11">
-    		<input type="radio" name="radio-btn" id="radio12">
-
-<!--radio buttons end-->
-<!--slide images start-->
-
-    			<div class="slide first">
-    				<img src="./blue sea images/bs.jpg"/>
-    			</div>
-    			<div class="slide">
-    				<img src="./cinna 20 images/cinna 20.jpg"/>
-    			</div>
-    			<div class="slide">
-    				<img src="./fluffy bunny images/fb.jpg"/>
-    			</div>
-    			<div class="slide">
-    				<img src="./hugging buddies images/hb.jpg" class="rounded-corners"/>
-    			</div>
-    			<div class="slide">
-    				<img src="./kuromi and melo images/km.jpg"/>
-    			</div>
-    			<div class="slide">
-    				<img src="./kuromis birthday images/kb.jpg" class="rounded-corners"/>
-    			</div>
-    			<div class="slide">
-    				<img src="./melo and kuromi sweet images"/>
-    			</div>
-    			<div class="slide">
-    				<img src="./melo secret images/ms.jpg"/>
-    			</div>
-    			<div class="slide">
-    				<img src="./peekaboo images/pb.jpg" class="rounded-corners"/>
-    			</div>
-    			<div class="slide">
-    				<img src="pocha flower images/pf.jpg"/>
-    			</div>
-    			<div class="slide">
-    				<img src="pocha school images/ps.jpg"/>
-				</div>
-    			<div class="slide">
-    				<img src="star angel images/sa.png"/>
-    			</div>
-    		<!--slide images end-->
-
-    		<!--automatic navi start-->
-    		<div class="navi-auto">
-    			<div class="auto-btn1"></div>
-    			<div class="auto-btn2"></div>
-    			<div class="auto-btn3"></div>
-    			<div class="auto-btn4"></div>
-    			<div class="auto-btn5"></div>
-    			<div class="auto-btn6"></div>
-    			<div class="auto-btn7"></div>
-    			<div class="auto-btn8"></div>
-    			<div class="auto-btn9"></div>
-    			<div class="auto-btn10"></div>
-    			<div class="auto-btn11"></div>
-    			<div class="auto-btn12"></div>
-    		</div>
-<!--automatic navi end-->
-
-    	</div>
-<!--manual nav start-->
-    	<div class="navi-manual">
-    		<label for="radio1" class="manual-btn"></label>
-    		<label for="radio2" class="manual-btn"></label>
-    		<label for="radio3" class="manual-btn"></label>
-    		<label for="radio4" class="manual-btn"></label>
-    		<label for="radio5" class="manual-btn"></label>
-    		<label for="radio6" class="manual-btn"></label>
-    		<label for="radio7" class="manual-btn"></label>
-    		<label for="radio8" class="manual-btn"></label>
-    		<label for="radio9" class="manual-btn"></label>
-    		<label for="radio10" class="manual-btn"></label>
-    		<label for="radio11" class="manual-btn"></label>
-    		<label for="radio12" class="manual-btn"></label>
-<!--manual nav end-->
-
- 		<script type="text/javascript">
-    		var counter = 1;
-   			 setInterval(function() {
-        	document.getElementById('radio' + counter).checked = true;
-       		 counter++;
-        	if (counter > 12) {
-           		counter = 1;
-       			}
-   			}, 5000);
-		</script>
-<!--chatgpt fixed my code-->
-
-    	</div>
-	</div>
-
-<!--image slider end-->
-<!--used image slider tutorial on Youtube-->
+  			<div class="carousel-cell"><img src="img/blue sea images/bs.jpg"/></div>
+ 			<div class="carousel-cell"><img src="img/cinna 20 images/cinna 20.jpg"/></div>
+  			<div class="carousel-cell"><img src="img/fluffy bunny images/fb.jpg"/></div>
+  			<div class="carousel-cell"><img src="img/hugging buddies images/hb.jpg" class="rounded-corners"/></div>
+  			<div class="carousel-cell"><img src="img/kuromi and melo images/km.jpg"/></div>
+  			<div class="carousel-cell"><img src="img/kuromis birthday images/kb.jpg" class="rounded-corners"/></div>
+  			<div class="carousel-cell"><img src="img/melo and kuromi sweet images/km.jpg"/></div>
+  			<div class="carousel-cell"><img src="img/melo secret images/ms.jpg"/></div>
+  			<div class="carousel-cell"><img src="img/peekaboo images/pb.jpg" class="rounded-corners"/></div>
+  			<div class="carousel-cell"><img src="img/pocha flower images/pf.jpg"/></div>
+  			<div class="carousel-cell"><img src="img/pocha school images/ps.jpg"/></div>
+  			<div class="carousel-cell"><img src="img/star angel images/sa.png"/></div>
+  		
+		</div>
+<!--used Flickity to do the carousel slider, rec by Ali-->
 
     <section class="items">
-
         <div class="item">
-        	<img src="./blue sea images/bs.jpg" class="rounded-corners"/>
+        	<img src="img/blue sea images/bs.jpg" class="rounded-corners"/>
         		<button>
         			<a href="Blue Sea.html" target="_blank">Blue Sea Holiday Series</a>
         		</button>
         </div>
-
         <div class="item">
-        	<img src="./cinna 20 images/cinna 20.jpg" class="rounded-corners"/>
+        	<img src="img/cinna 20 images/cinna 20.jpg" class="rounded-corners"/>
         		<button>
-        			<a href="Cinna 20.html" target="_blank">Cinnamonroll 20th Anniversary Series</a>
+        			<a href="/Cinna 20.html" target="_blank">Cinnamonroll 20th Anniversary Series</a>
         		</button>
         </div>
-
         <div class="item">
-        	<img src="./fluffy bunny images/fb.jpg" class="rounded-corners"/>
+        	<img src="img/fluffy bunny images/fb.jpg" class="rounded-corners"/>
         		<button>
         			<a href="Fluffy Rabbit.html" target="_blank">Fluffy Rabbit Series</a>
         		</button>
        	</div>
-
        	<div class="item">
-        	<img src="./hugging buddies images/hb.jpg" class="rounded-corners"/>
+        	<img src="img/hugging buddies images/hb.jpg" class="rounded-corners"/>
         		<button>
         			<a href="Hugging Buddies.html" target="_blank">Hugging Buddies Series</a>
         		</button>
         </div>
-
         <div class=item>
-        	<img src="./kuromi and melo images/km.jpg" class="rounded-corners"/>
+        	<img src="img/kuromi and melo images/km.jpg" class="rounded-corners"/>
         		<button>
         			<a href="Kuro and Melo.html" target="_blank">Kuromi and Melody Rose and Earl Series</a>
         		</button>
         </div>
-
         <div class="item">
-        	<img src="./kuromis birthday images/kb.jpg" class="rounded-corners"/>
+        	<img src="img/kuromis birthday images/kb.jpg" class="rounded-corners"/>
         		<button>
         			<a href="Kuromis Birthday.html" target="_blank">Kuromi's Birthday Series</a>
         		</button>
         </div>
-
         <div class="item">
-        	<img src="./melo and kuromi sweet images/km.jpg" class="rounded-corners"/>
+        	<img src="img/melo and kuromi sweet images/km.jpg" class="rounded-corners"/>
         		<button>
         			<a href="My Melody and Kuromi.html" target="_blank">My Melody and Kuromi Sweetheart Pajamas Series</a>
         		</button>
         </div>
-
         <div class="item">
-        	<img src="./melo secret images/ms.jpg" class="rounded-corners"/>
+        	<img src="img/melo secret images/ms.jpg" class="rounded-corners"/>
         		<button>
         			<a href="My Melody.html" target="_blank">My Melody Secret Forest Tea Party Series</a>
         		</button>
         </div>
-
         <div class="item">
-        	<img src="./peekaboo images/pb.jpg" class="rounded-corners"/>
+        	<img src="img/peekaboo images/pb.jpg" class="rounded-corners"/>
         		<button>
         			<a href="Peekaboo.html" target="_blank">Peekaboo Series</a>
         		</button>
         </div>
-
         <div class="item">
-        	<img src="pocha flower images/pf.jpg" class="rounded-corners"/>
+        	<img src="img/pocha flower images/pf.jpg" class="rounded-corners"/>
         		<button>
         			<a href="Pocha Flower.html" target="_blank">Pocchacco Flower and Childhood Series</a>
         		</button>
         </div>
-
         <div class="item">
-        	<img src="./pocha school images/ps.jpg" class="rounded-corners"/>
+        	<img src="img/pocha school images/ps.jpg" class="rounded-corners"/>
         		<button>
         			<a href="Pocha School.html" target="_blank">Pocchacco School Day Series</a>
         		</button>
         </div>
-
        	<div class="item">
-   			<img src="star angel images/sa.png" class="rounded-corners"/>
+   			<img src="img/star angel images/sa.png" class="rounded-corners"/>
     		<button>
         		<a href="Star Angel.html" target="_blank">Star Angel Series</a>
 <!--looked up how to round corners-->
     		</button>
 		</div>
-
     </section>
     	
     	</div>
 
     </section>
+
+	<script src="js/script.js"></script>
 
 </body>
 
