@@ -1,20 +1,20 @@
-    window.addEventListener('scroll', reveal);
+window.addEventListener('scroll', reveal);
 
-    function reveal() {
-        var reveals = document.querySelectorAll('.reveal');
+function reveal() {
+    var reveals = document.querySelectorAll('.reveal');
 
-        for (var i = 0; i < reveals.length; i++) {
-            var windowHeight = window.innerHeight;
-            var revealTop = reveals[i].getBoundingClientRect().top;
-            var revealPoint = 150;
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var revealTop = reveals[i].getBoundingClientRect().top;
+        var revealPoint = 150;
 
-            if (revealTop < windowHeight - revealPoint) {
-                reveals[i].classList.add('active');
-            } else {
-                reveals[i].classList.remove('active');
-            }
+        if (revealTop < windowHeight - revealPoint) {
+            reveals[i].classList.add('active');
+        } else {
+            reveals[i].classList.remove('active');
         }
     }
+}
 
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
@@ -28,3 +28,4 @@ var flkty = new Flickity( elem, {
 var flkty = new Flickity( '.main-carousel', {
   // options
 });
+

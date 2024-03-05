@@ -6,13 +6,59 @@
     
 <!-- CSS -->
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
 <!-- JavaScript -->
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 <link rel="stylesheet" href="css/style.css"/>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 
-<body>
+<body> 
+
+<!-- Your menu button -->
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Your sidebar -->
+    <div class="side-bar">
+        <!-- Header section -->
+        <header>
+            <!-- Close button -->
+            <div class="close-btn">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <!-- Image -->
+            <img src="img/bow-images/bow.png" alt="Bow Image">
+
+            <!-- Logo -->
+            <h1>Sanrio Blind Box Collector</h1>
+        </header>
+
+        <!-- Menu items -->
+        <div class="menu">
+            <div class="object"><a href="">About</a></div>
+            <div class="object"><a href="">Home</a></div>
+            <div class="object"><a href="Blue Sea.html">Blue Sea Holiday</a></div>
+            <div class="object"><a href="Cinna 20.html">Cinnamoroll 20th Anniversary Birthday</a></div>
+            <div class="object"><a href="Fluffy Rabbit.html">Fluffy Rabbit</a></div>
+            <div class="object"><a href="Hugging Buddies.html">Hugging Buddies</a></div>
+            <div class="object"><a href="Kuro and Melo.html">Kuromi and Melody Rose and Earl</a></div>
+            <div class="object"><a href="Kuromis Birthday.html">Kuromi's Birthday</a></div>
+            <div class="object"><a href="My Melody and Kuromi.html">My Melody and Kuromi Sweetheart Pajamas</a></div>
+            <div class="object"><a href="My Melody.html">My Melody Secret Forest Tea Party</a></div>
+            <div class="object"><a href="Peekaboo.html">Peekaboo</a></div>
+            <div class="object"><a href="Pocha Flower.html">Pochacco Flower and Childhood</a></div>
+            <div class="object"><a href="Pocha School.html">Pochacco School Day</a></div>
+            <div class="object"><a href="Star Angel.html">Star Angel</a></div>
+
+        </div>
+
+     </div>     
 
     <section>
 
@@ -22,7 +68,9 @@
 
     </section>
 
-    <section> <!--Chatgpt added a missing opening <section> tag here-->
+    <section class="extra-section-margin"> 
+<!--Chatgpt added a missing opening <section> tag here-->
+<!--deb added class name-->
 
         <div class="container reveal">
 
@@ -47,103 +95,99 @@
 
     </section>
 
-    <section>
+
 
 <!--looked up how to fade on scroll text on Youtube-->
 
-    </section>
-    	
-    </div>
+        <div class="main-carousel">
+            <div class="carousel-cell"><img src="img/blue sea images/bs.jpg"/></div>
+            <div class="carousel-cell"><img src="img/cinna 20 images/cinna 20.jpg"/></div>
+            <div class="carousel-cell"><img src="img/fluffy bunny images/fb.jpg"/></div>
+            <div class="carousel-cell"><img src="img/hugging buddies images/hb.jpg" class="rounded-corners"/></div>
+            <div class="carousel-cell"><img src="img/kuromi and melo images/km.jpg"/></div>
+            <div class="carousel-cell"><img src="img/kuromis birthday images/kb.jpg" class="rounded-corners"/></div>
+            <div class="carousel-cell"><img src="img/melo and kuromi sweet images/km.jpg"/></div>
+            <div class="carousel-cell"><img src="img/melo secret images/ms.jpg"/></div>
+            <div class="carousel-cell"><img src="img/peekaboo images/pb.jpg" class="rounded-corners"/></div>
+            <div class="carousel-cell"><img src="img/pocha flower images/pf.jpg"/></div>
+            <div class="carousel-cell"><img src="img/pocha school images/ps.jpg"/></div>
+            <div class="carousel-cell"><img src="img/star angel images/sa.png"/></div>
+        </div>
 
-    	<div class="main-carousel">
-
-  			<div class="carousel-cell"><img src="img/blue sea images/bs.jpg"/></div>
- 			<div class="carousel-cell"><img src="img/cinna 20 images/cinna 20.jpg"/></div>
-  			<div class="carousel-cell"><img src="img/fluffy bunny images/fb.jpg"/></div>
-  			<div class="carousel-cell"><img src="img/hugging buddies images/hb.jpg" class="rounded-corners"/></div>
-  			<div class="carousel-cell"><img src="img/kuromi and melo images/km.jpg"/></div>
-  			<div class="carousel-cell"><img src="img/kuromis birthday images/kb.jpg" class="rounded-corners"/></div>
-  			<div class="carousel-cell"><img src="img/melo and kuromi sweet images/km.jpg"/></div>
-  			<div class="carousel-cell"><img src="img/melo secret images/ms.jpg"/></div>
-  			<div class="carousel-cell"><img src="img/peekaboo images/pb.jpg" class="rounded-corners"/></div>
-  			<div class="carousel-cell"><img src="img/pocha flower images/pf.jpg"/></div>
-  			<div class="carousel-cell"><img src="img/pocha school images/ps.jpg"/></div>
-  			<div class="carousel-cell"><img src="img/star angel images/sa.png"/></div>
-  		
-		</div>
 <!--used Flickity to do the carousel slider, rec by Ali-->
 
     <section class="items">
         <div class="item">
         	<img src="img/blue sea images/bs.jpg" class="rounded-corners"/>
         		<button>
-        			<a href="Blue Sea.html" target="_blank">Blue Sea Holiday Series</a>
+        			<a href="Blue Sea.html">Blue Sea Holiday Series</a>
         		</button>
         </div>
         <div class="item">
         	<img src="img/cinna 20 images/cinna 20.jpg" class="rounded-corners"/>
         		<button>
-        			<a href="/Cinna 20.html" target="_blank">Cinnamonroll 20th Anniversary Series</a>
+        			<a href="Cinna 20.html">Cinnamoroll 20th Anniversary Birthday Series</a>
         		</button>
+<!--Deb removed a / to fix my link-->
         </div>
         <div class="item">
         	<img src="img/fluffy bunny images/fb.jpg" class="rounded-corners"/>
         		<button>
-        			<a href="Fluffy Rabbit.html" target="_blank">Fluffy Rabbit Series</a>
+        			<a href="Fluffy Rabbit.html">Fluffy Rabbit Series</a>
         		</button>
        	</div>
        	<div class="item">
         	<img src="img/hugging buddies images/hb.jpg" class="rounded-corners"/>
         		<button>
-        			<a href="Hugging Buddies.html" target="_blank">Hugging Buddies Series</a>
+        			<a href="Hugging Buddies.html">Hugging Buddies Series</a>
         		</button>
         </div>
         <div class=item>
         	<img src="img/kuromi and melo images/km.jpg" class="rounded-corners"/>
         		<button>
-        			<a href="Kuro and Melo.html" target="_blank">Kuromi and Melody Rose and Earl Series</a>
+        			<a href="Kuro and Melo.html">Kuromi and Melody Rose and Earl Series</a>
         		</button>
         </div>
         <div class="item">
         	<img src="img/kuromis birthday images/kb.jpg" class="rounded-corners"/>
         		<button>
-        			<a href="Kuromis Birthday.html" target="_blank">Kuromi's Birthday Series</a>
+        			<a href="Kuromis Birthday.html">Kuromi's Birthday Series</a>
         		</button>
         </div>
         <div class="item">
         	<img src="img/melo and kuromi sweet images/km.jpg" class="rounded-corners"/>
         		<button>
-        			<a href="My Melody and Kuromi.html" target="_blank">My Melody and Kuromi Sweetheart Pajamas Series</a>
+        			<a href="My Melody and Kuromi.html">My Melody and Kuromi Sweetheart Pajamas Series</a>
         		</button>
         </div>
         <div class="item">
         	<img src="img/melo secret images/ms.jpg" class="rounded-corners"/>
         		<button>
-        			<a href="My Melody.html" target="_blank">My Melody Secret Forest Tea Party Series</a>
+        			<a href="My Melody.html">My Melody Secret Forest Tea Party Series</a>
         		</button>
         </div>
         <div class="item">
         	<img src="img/peekaboo images/pb.jpg" class="rounded-corners"/>
         		<button>
-        			<a href="Peekaboo.html" target="_blank">Peekaboo Series</a>
+        			<a href="Peekaboo.html">Peekaboo Series</a>
         		</button>
         </div>
         <div class="item">
         	<img src="img/pocha flower images/pf.jpg" class="rounded-corners"/>
         		<button>
-        			<a href="Pocha Flower.html" target="_blank">Pocchacco Flower and Childhood Series</a>
+        			<a href="Pocha Flower.html">Pocchacco Flower and Childhood Series</a>
         		</button>
         </div>
         <div class="item">
         	<img src="img/pocha school images/ps.jpg" class="rounded-corners"/>
         		<button>
-        			<a href="Pocha School.html" target="_blank">Pocchacco School Day Series</a>
+        			<a href="Pocha School.html">Pocchacco School Day Series</a>
         		</button>
         </div>
        	<div class="item">
    			<img src="img/star angel images/sa.png" class="rounded-corners"/>
     		<button>
-        		<a href="Star Angel.html" target="_blank">Star Angel Series</a>
+        		<a href="Star Angel.html">Star Angel Series</a>
 <!--looked up how to round corners-->
     		</button>
 		</div>
@@ -154,6 +198,31 @@
     </section>
 
 	<script src="js/script.js"></script>
+
+    <!--Jquery CDN link-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function(){
+        // jQuery for expanding and collapsing the sidebar
+        $('.menu-btn').click(function(){
+            $('.side-bar').addClass('active');
+            $('.menu-btn').css("visibility", "hidden");
+        });
+
+        // for close button
+        $('.close-btn').click(function(){
+            $('.side-bar').removeClass('active');
+            $('.menu-btn').css("visibility", "visible");
+        });
+
+        // jQuery for toggling sub menus
+        $('.sub-btn').click(function(){
+            $(this).next('.sub-menu').slideToggle();
+            $(this).find('.dropdown').toggleClass('rotate');
+        });
+    });
+</script>
+
 
 </body>
 
