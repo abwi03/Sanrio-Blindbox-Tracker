@@ -7,7 +7,56 @@
 		Kuromi's Birthday Series
 	</title>
 
-		<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body> 
+
+<!-- Your menu button -->
+    <nav class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </nav>
+
+    <!-- Your sidebar -->
+    <div class="side-bar">
+        <!-- Header section -->
+        <header>
+            <!-- Close button -->
+            <div class="close-btn">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <!-- Image -->
+            <img src="img/bow-images/bow.png" alt="Bow Image">
+
+            <!-- Logo -->
+            <h1>Sanrio Blind Box Collector</h1>
+        </header>
+
+        <!-- Menu items -->
+        <div class="menu">
+             <div class="object"><a href="index.html">Home</a></div>
+            <div class="object"><a href="Blue Sea.html">Blue Sea Holiday</a></div>
+            <div class="object"><a href="Cinna 20.html">Cinnamoroll 20th Anniversary Birthday</a></div>
+            <div class="object"><a href="Fluffy Rabbit.html">Fluffy Rabbit</a></div>
+            <div class="object"><a href="Hugging Buddies.html">Hugging Buddies</a></div>
+            <div class="object"><a href="Kuro and Melo.html">Kuromi and Melody Rose and Earl</a></div>
+            <div class="object"><a href="Kuromis Birthday.html">Kuromi's Birthday</a></div>
+            <div class="object"><a href="My Melody and Kuromi.html">My Melody and Kuromi Sweetheart Pajamas</a></div>
+            <div class="object"><a href="My Melody.html">My Melody Secret Forest Tea Party</a></div>
+            <div class="object"><a href="Peekaboo.html">Peekaboo</a></div>
+            <div class="object"><a href="Pocha Flower.html">Pochacco Flower and Childhood</a></div>
+            <div class="object"><a href="Pocha School.html">Pochacco School Day</a></div>
+            <div class="object"><a href="Star Angel.html">Star Angel</a></div>
+
+        </div>
+
+     </div> 
+
+<!-- end of menu section -->
 
 </head>
 
@@ -17,4 +66,105 @@
 			Kuromi's Birthday Series
 		</h1>
 
+			<section class="items">
+
+			<div class="pics">
+				<img src="img/kuromis birthday images/kuromi 1.png"/>
+					<div class="cb-button">
+						<label>
+							<input type="checkbox" value="1">
+							<span>Sleeping Princess</span>
+						</label>
+					</div>
+			</div>
+
+			<div class="pics">
+				<img src="img/kuromis birthday images/kuromi 2.png"/>
+					<div class="cb-button">
+						<label>
+							<input type="checkbox" value="1">
+							<span>Cool Sweetheart</span>
+						</label>
+					</div>
+			</div>
+
+			<div class="pics">
+				<img src="img/kuromis birthday images/kuromi 3.png"/>
+					<div class="cb-button">
+						<label>
+							<input type="checkbox" value="1">
+							<span>Dreams Come True</span>
+						</label>
+					</div>
+			</div>
+
+			<div class="pics">
+				<img src="img/kuromis birthday images/kuromi 4.png"/>
+					<div class="cb-button">
+						<label>
+							<input type="checkbox" value="1">
+							<span>Fast Heartbeat</span>
+						</label>
+					</div>
+			</div>
+
+			<div class="pics">
+				<img src="img/kuromis birthday images/kuromi 5.png"/>
+					<div class="cb-button">
+						<label>
+							<input type="checkbox" value="1">
+							<span>Mysterious Gift</span>
+						</label>
+					</div>
+			</div>
+
+			<div class="pics">
+				<img src="img/kuromis birthday images/kuromi 6.png"/>
+					<div class="cb-button">
+						<label>
+							<input type="checkbox" value="1">
+							<span>Party Dancer</span>
+						</label>
+					</div>
+			</div>
+
+			<div class="pics">
+				<img src="img/kuromis birthday images/kuromi 7.png"/>
+					<div class="cb-button">
+						<label>
+							<input type="checkbox" value="1">
+							<span>Cake Car</span>
+						</label>
+					</div>
+			</div>
+
+		</section>
+
+<!--Jquery CDN link-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function(){
+        // jQuery for expanding and collapsing the sidebar
+        $('.menu-btn').click(function(){
+            $('.side-bar').addClass('active');
+            $('.menu-btn').css("visibility", "hidden");
+        });
+
+        // for close button
+        $('.close-btn').click(function(){
+            $('.side-bar').removeClass('active');
+            $('.menu-btn').css("visibility", "visible");
+        });
+
+        // jQuery for toggling sub menus
+        $('.sub-btn').click(function(){
+            $(this).next('.sub-menu').slideToggle();
+            $(this).find('.dropdown').toggleClass('rotate');
+        });
+    });
+</script>
+<!-- end of jquery -->
+
 	</body>
+
+</html>

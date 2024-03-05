@@ -6,14 +6,158 @@
 		Blue Sea Holiday Series
 	</title>
 
-	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 
 <body>
+
+	<!-- Your menu button -->
+    <nav class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </nav>
+
+    <!-- Your sidebar -->
+    <div class="side-bar">
+        <!-- Header section -->
+        <header>
+            <!-- Close button -->
+            <div class="close-btn">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <!-- Image -->
+            <img src="img/bow-images/bow.png" alt="Bow Image">
+
+            <!-- Logo -->
+            <h1>Sanrio Blind Box Collector</h1>
+        </header>
+
+        <!-- Menu items -->
+        <div class="menu">
+            <div class="object"><a href="index.html">Home</a></div>
+            <div class="object"><a href="Blue Sea.html">Blue Sea Holiday</a></div>
+            <div class="object"><a href="Cinna 20.html">Cinnamoroll 20th Anniversary Birthday</a></div>
+            <div class="object"><a href="Fluffy Rabbit.html">Fluffy Rabbit</a></div>
+            <div class="object"><a href="Hugging Buddies.html">Hugging Buddies</a></div>
+            <div class="object"><a href="Kuro and Melo.html">Kuromi and Melody Rose and Earl</a></div>
+            <div class="object"><a href="Kuromis Birthday.html">Kuromi's Birthday</a></div>
+            <div class="object"><a href="My Melody and Kuromi.html">My Melody and Kuromi Sweetheart Pajamas</a></div>
+            <div class="object"><a href="My Melody.html">My Melody Secret Forest Tea Party</a></div>
+            <div class="object"><a href="Peekaboo.html">Peekaboo</a></div>
+            <div class="object"><a href="Pocha Flower.html">Pochacco Flower and Childhood</a></div>
+            <div class="object"><a href="Pocha School.html">Pochacco School Day</a></div>
+            <div class="object"><a href="Star Angel.html">Star Angel</a></div>
+
+        </div>
+
+     </div>
+     <!--end of nav bar-->  
 	
 	<h1>
 		Blue Sea Holiday Series
 	</h1>
 
+		<section class="items">
+			<div class="pics">
+				<img src="img/blue sea images/purin.png"/>
+					<div class="cb-button">
+						<label>
+							<input type="checkbox" value="1">
+							<span>Pompompurin</span>
+						</label>
+					</div>
+			</div>
+
+			<div class="pics">
+				<img src="img/blue sea images/cinna.png"/>
+					<div class="cb-button">
+						<label>
+							<input type="checkbox" value="1">
+							<span>Cinnamoroll</span>
+						</label>
+					</div>
+			</div>
+
+			<div class="pics">
+				<img src="img/blue sea images/pocha.png"/>
+					<div class="cb-button">
+						<label>
+							<input type="checkbox" value="1">
+							<span>Pochacco</span>
+						</label>
+					</div>
+			</div>
+
+			<div class="pics">
+				<img src="img/blue sea images/kiki.png"/>
+					<div class="cb-button">
+						<label>
+							<input type="checkbox" value="1">
+							<span>Kiki</span>
+						</label>
+					</div>
+			</div>
+
+			<div class="pics">
+				<img src="img/blue sea images/lala.png"/>
+					<div class="cb-button">
+						<label>
+							<input type="checkbox" value="1">
+							<span>Lala</span>
+						</label>
+					</div>
+			</div>
+
+			<div class="pics">
+				<img src="img/blue sea images/melo.png"/>
+					<div class="cb-button">
+						<label>
+							<input type="checkbox" value="1">
+							<span>My Melody</span>
+						</label>
+					</div>
+			</div>
+
+			<div class="pics">
+				<img src="img/blue sea images/kuromi.png"/>
+					<div class="cb-button">
+						<label>
+							<input type="checkbox" value="1">
+							<span>Kuromi</span>
+						</label>
+					</div>
+			</div>
+<!-- Deb added and missing </div-->
+
+		</section>
+
+    <!--Jquery CDN link-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function(){
+        // jQuery for expanding and collapsing the sidebar
+        $('.menu-btn').click(function(){
+            $('.side-bar').addClass('active');
+            $('.menu-btn').css("visibility", "hidden");
+        });
+
+        // for close button
+        $('.close-btn').click(function(){
+            $('.side-bar').removeClass('active');
+            $('.menu-btn').css("visibility", "visible");
+        });
+
+        // jQuery for toggling sub menus
+        $('.sub-btn').click(function(){
+            $(this).next('.sub-menu').slideToggle();
+            $(this).find('.dropdown').toggleClass('rotate');
+        });
+    });
+</script>
+
 </body>
+
+</html>

@@ -3,7 +3,7 @@
     src: url(fonts/Baloo-Regular.woff);
 }
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,6 +27,10 @@ section {
     align-items: center;
 }
 
+.extra-section-margin{
+        margin-bottom:70px;
+}
+
 section:nth-child(1) {
     color: rgba(253, 221, 221, 1.0);
 }
@@ -38,6 +42,7 @@ section .container {
 section h1 {
     font-size: 80px;
     -webkit-text-stroke: 0.5pt rgba(191, 100, 100, 1.0);
+    margin-bottom: 8px;
 }
 
 section h2 {
@@ -82,10 +87,12 @@ section p {
 /*Ali said to add max with 15000 and margin auto so its aligns with any browser size*/
 }
 
+
 .item img{
     max-width: 100%;
 /*Ali helped me fix centering and sizing issues*/
-    height: auto;
+    height:300px;
+    width:auto;
     object-fit: cover;
     cursor: pointer;
     transition: 0.2s ease;
@@ -94,6 +101,7 @@ section p {
 
 .item img:hover{
     transform: scale(1.04);
+/*learned how to have the img scale up when hovering on YouTube*/
 }
 
 .item button {
@@ -119,7 +127,6 @@ section p {
 /*looked up how to have no underline on links*/
 
 .item button:hover{
-    transform: scale(1.08);
     background-color: rgba(253, 221, 221, 1.0);
     color: rgba(191, 100, 100, 1.0);
 }
@@ -178,9 +185,11 @@ h1{
 }
 
 .main-carousel{
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
+    margin-bottom:35px;
 /*Ali helped me fix centering issue*/
+/*Deb added margin-bottom*/
 }
 
 .carousel-cell img{
@@ -188,3 +197,176 @@ h1{
     border-radius: 13pt;
 }
 /*Ali helped me formart the carousel styling*/
+
+.fluffy-rabbit:active{
+    color:black;
+    background:white;
+}
+
+.cb-button{
+    color:rgba(253, 221, 221, 1.0);
+    background:rgba(191, 100, 100, 1.0);
+    border-radius:13pt;
+    text-align: center;
+    font-size: 18px;
+    width: 200px;
+    height: 30px;
+    margin: auto;
+}
+
+.cb-button:hover{
+    color:rgba(191, 100, 100, 1.0);
+    background:rgba(253, 221, 221, 1.0);
+    border-radius:13pt; 
+    width: 200px;
+    height: 30px;
+}
+
+.cb-button input:checked + span{
+    color:rgba(191, 100, 100, 1.0);
+    background:rgba(253, 221, 221, 1.0);
+    border-radius:13pt;
+    width: 200px;
+    height: 30px;
+}
+
+.cb-button label span{
+    display:block;
+}
+
+.cb-button label input {
+    position:absolute;
+}
+
+.cb-button input[type="checkbox"] {
+    appearance:none;
+}
+/*Deb helped me with invisible check box/color changing label*/
+
+.pics{
+    margin: auto;
+}
+
+.pics img{
+    height: 350px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.pics img:hover{
+    transform: scale(1.08);
+}
+
+.pics button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: rgba(191, 100, 100, 1.0);
+    color: rgba(253, 221, 221, 1.0);
+    cursor: pointer;
+    border-radius: 13px;
+    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    transition: 0.2s all;
+    text-decoration: none;
+}
+
+.pics button:hover{
+    color: rgba(191, 100, 100, 1.0);
+    background-color: rgba(253, 221, 221, 1.0);
+}
+
+.side-bar {
+    background: rgba(253, 221, 221, 1.0);
+    width: 250px;
+    left: -250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    overflow-y: auto;
+    transition: left 0.6s ease; /*chatgpt simplified the transition property */
+}
+
+header {
+    background: rgba(191, 100, 100, 1.0);
+}
+
+header img {
+    width: 100px;
+    margin: 15px;
+    margin-left: 70px;
+}
+
+.close-btn {
+    position: absolute;
+    color: rgba(253, 221, 221, 1.0);
+    font-size: 23px;
+    right: 0;
+    margin: 15px;
+    cursor: pointer;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 13px;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 0pt;
+}
+
+.menu {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.menu .object {
+    position: relative;
+    cursor: pointer;
+}
+
+.menu .object a {
+    color: rgba(197, 100, 100, 1.0);
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 40px;
+}
+
+.menu .object a:hover{
+    background: rgba(237, 202, 202, 1.0);
+}
+
+.menu .object a.dropdown {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+
+.menu .sub-menu {
+    background: rgba(197, 131, 131, 1.0);
+    display: none;
+}
+
+.menu-btn {
+    position: fixed;
+    color: rgba(191, 100, 100, 1.0);
+    font-size: 35px;
+    cursor: pointer;
+    margin: 25px;
+    z-index:1;
+/*deb added z-index and fixed position*/
+}
+
+.side-bar.active{
+    left: 0;
+}
+
+
+.side-bar{
+    z-index:1;
+}
